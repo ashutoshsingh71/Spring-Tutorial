@@ -40,11 +40,11 @@
         <constructor-arg value="1"></constructor-arg>
         <constructor-arg value="What is Java?"></constructor-arg>
         <constructor-arg>
-            <list>
-                <ref bean="answer1"></ref>
-                <ref bean="answer2"></ref>
-                <ref bean="answer3"></ref>
-            </list>
+            <map>
+                <entry key="Java is a OOPS concept" value="Jhon"></entry>
+                <entry key="Java is an island" value="Bukkhad"></entry>
+                <entry key="Java is a programming languag" value="Desi"></entry>
+            </map>
         </constructor-arg>
     </bean>
 </beans>
