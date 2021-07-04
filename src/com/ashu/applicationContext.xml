@@ -48,5 +48,6 @@
         </constructor-arg>
     </bean>
 
-    <bean id="p" class="com.ashu.PrintableFactory" factory-method="getPrintableObject"></bean>
+    <bean id="printfactory" class="com.ashu.PrintableFactory"></bean>
+    <bean id="p" class="com.ashu.PrintableFactory" factory-method="getPrintableObject" factory-bean="printfactory"></bean>
 </beans>
