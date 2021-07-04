@@ -1,6 +1,7 @@
 package com.ashu.test;
 
 import com.ashu.A;
+import com.ashu.Printable;
 import com.ashu.Question;
 import com.ashu.Student;
 import org.springframework.beans.factory.BeanFactory;
@@ -22,7 +23,7 @@ public class StudentTest {
         //student.displayInfo();
         //Question question = (Question)context.getBean("question1");
         //question.display();
-        A obj = (A)context.getBean("a");
-        obj.show();
+        Printable obj = (Printable)context.getBean("p");
+        obj.print();
     }
 }
