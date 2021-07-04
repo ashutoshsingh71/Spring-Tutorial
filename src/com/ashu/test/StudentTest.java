@@ -22,7 +22,7 @@ public class StudentTest {
         //student.displayInfo();
         //Question question = (Question)context.getBean("question1");
         //question.display();
-        A obj = (A)context.getBean("a",A.class);
+        A obj = (A)context.getBean("a");
         obj.show();
     }
 }
