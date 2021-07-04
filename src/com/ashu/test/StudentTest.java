@@ -1,5 +1,6 @@
 package com.ashu.test;
 
+import com.ashu.A;
 import com.ashu.Question;
 import com.ashu.Student;
 import org.springframework.beans.factory.BeanFactory;
@@ -19,7 +20,9 @@ public class StudentTest {
         ApplicationContext context = new ClassPathXmlApplicationContext("com/ashu/applicationContext.xml");
         //Student student = (Student)context.getBean("studentbean");
         //student.displayInfo();
-        Question question = (Question)context.getBean("question1");
-        question.display();
+        //Question question = (Question)context.getBean("question1");
+        //question.display();
+        A obj = (A)context.getBean("a",A.class);
+        obj.show();
     }
 }
